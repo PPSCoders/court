@@ -1,0 +1,1942 @@
+                                                                    table.dataTable {
+                                                                        border: 1px solid rgba(34, 36, 38, .15);
+                                                                        -webkit-box-shadow: none;
+                                                                        box-shadow: none;
+                                                                        border-radius: .28571429rem .28571429rem 0 0;
+                                                                    }
+                                                                    
+                                                                    table.dataTable.no-footer {
+                                                                        border-bottom: 1px solid rgba(34, 36, 38, .15);
+                                                                    }
+                                                                    
+                                                                    table.dataTable thead th {
+                                                                        padding: .92857143em .78571429em;
+                                                                        border-bottom: 1px solid rgba(34, 36, 38, .1);
+                                                                        background: rgba(0, 0, 0, 0.05);
+                                                                        border-left: 1px solid rgba(34, 36, 38, .1);
+                                                                    }
+                                                                    
+                                                                    table.dataTable thead th:first-child {
+                                                                        border-left: none;
+                                                                    }
+                                                                    
+                                                                    table.dataTable thead tr:first-child>th:first-child {
+                                                                        border-radius: .28571429rem 0 0 0;
+                                                                    }
+                                                                    
+                                                                    table.dataTable thead tr:first-child>th:last-child {
+                                                                        border-radius: 0 .28571429rem 0 0;
+                                                                    }
+                                                                    
+                                                                    table.dataTable tbody td {
+                                                                        padding: .78571429em .78571429em;
+                                                                        border-top: 1px solid rgba(34, 36, 38, .1);
+                                                                        border-left: 1px solid rgba(34, 36, 38, .1);
+                                                                    }
+                                                                    
+                                                                    table.dataTable tbody td:first-child {
+                                                                        border-left: none;
+                                                                    }
+                                                                    
+                                                                    table.dataTable tbody tr:first-child td {
+                                                                        border-top: none;
+                                                                    }
+                                                                    
+                                                                    .dataTables_wrapper .dataTables_paginate {
+                                                                        display: -webkit-box;
+                                                                        display: -ms-flexbox;
+                                                                        display: flex;
+                                                                        margin: .8rem 0 !important;
+                                                                        background: #fff;
+                                                                        font-weight: 400;
+                                                                        border: 1px solid rgba(34, 36, 38, .15);
+                                                                        -webkit-box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+                                                                        box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+                                                                        border-radius: .28571429rem !important;
+                                                                        min-height: 2.85714286em !important;
+                                                                        padding: 0 !important;
+                                                                    }
+                                                                    
+                                                                    .dataTables_paginate .paginate_button {
+                                                                        margin-left: 0px !important;
+                                                                        border: 0 !important;
+                                                                        position: relative;
+                                                                        vertical-align: middle;
+                                                                        line-height: 1;
+                                                                        text-decoration: none;
+                                                                        -webkit-tap-highlight-color: transparent;
+                                                                        -webkit-box-flex: 0;
+                                                                        -ms-flex: 0 0 auto;
+                                                                        flex: 0 0 auto;
+                                                                        -webkit-user-select: none;
+                                                                        -moz-user-select: none;
+                                                                        -ms-user-select: none;
+                                                                        user-select: none;
+                                                                        background: 0 0;
+                                                                        padding: .92857143em 1.14285714em !important;
+                                                                        border-radius: 0 !important;
+                                                                        text-transform: none;
+                                                                        color: rgba(0, 0, 0, .87) !important;
+                                                                        font-weight: 400 !important;
+                                                                        -webkit-transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease;
+                                                                        transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease;
+                                                                        transition: background .1s ease, box-shadow .1s ease, color .1s ease;
+                                                                        transition: background .1s ease, box-shadow .1s ease, color .1s ease, -webkit-box-shadow .1s ease;
+                                                                    }
+                                                                    
+                                                                    .dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+                                                                    .dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+                                                                        background: rgba(0, 0, 0, .05) !important;
+                                                                        color: rgba(0, 0, 0, .95) !important;
+                                                                    }
+                                                                    
+                                                                    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+                                                                    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+                                                                    .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:focus {
+                                                                        cursor: default!important;
+                                                                        background-color: transparent!important;
+                                                                        color: rgba(40, 40, 40, .3)!important;
+                                                                    }
+                                                                    
+                                                                    .dataTables_paginate .paginate_button::before {
+                                                                        position: absolute;
+                                                                        content: '';
+                                                                        top: 0;
+                                                                        right: 0;
+                                                                        height: 100%;
+                                                                        width: 1px;
+                                                                        background: rgba(34, 36, 38, .1);
+                                                                    }
+                                                                    
+                                                                    .dataTables_paginate .paginate_button.next::before {
+                                                                        width: 0;
+                                                                        background: transparent;
+                                                                    }
+                                                                    
+                                                                    .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+                                                                    .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+                                                                        border-top: none !important;
+                                                                        padding-top: .92857143em !important;
+                                                                        background-color: #f8f9fa!important;
+                                                                        color: #fff !important;
+                                                                        -webkit-box-shadow: none !important;
+                                                                        box-shadow: none !important;
+                                                                        background-image: none !important;
+                                                                        border: none !important;
+                                                                    }
+                                                                    
+                                                                    .dataTables_paginate span {
+                                                                        display: flex;
+                                                                    }
+                                                                    
+                                                                    div.dataTables_wrapper div.dataTables_info {
+                                                                        padding-top: 13px;
+                                                                        white-space: nowrap;
+                                                                    }
+                                                                    
+                                                                    div.dataTables_wrapper div.dataTables_filter input {
+                                                                        border-radius: .28571429rem;
+                                                                    }
+                                                                    
+                                                                    .dataTables_wrapper .dataTables_paginate .ellipsis {
+                                                                        line-height: 2.5;
+                                                                    }
+                                                                    /* Don't show the control column when the expand/collapse option isn't present */
+                                                                    /* Datatables uses 1024+ as desktop size. */
+                                                                    
+                                                                    @media only screen and (min-width: 1025px) {
+                                                                        .dtr-control {
+                                                                            display: none;
+                                                                        }
+                                                                    }
+                                                                    /**
+ * @file
+ * Throbber.
+ */
+                                                                    
+                                                                    .ajax-progress {
+                                                                        display: inline-block;
+                                                                        padding: 1px 5px 2px 5px;
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] .ajax-progress {
+                                                                        float: right;
+                                                                    }
+                                                                    
+                                                                    .ajax-progress-throbber .throbber {
+                                                                        display: inline;
+                                                                        padding: 1px 5px 2px;
+                                                                        background: transparent url(../../../images/core/throbber-active.gif) no-repeat 0 center;
+                                                                    }
+                                                                    
+                                                                    .ajax-progress-throbber .message {
+                                                                        display: inline;
+                                                                        padding: 1px 5px 2px;
+                                                                    }
+                                                                    
+                                                                    tr .ajax-progress-throbber .throbber {
+                                                                        margin: 0 2px;
+                                                                    }
+                                                                    
+                                                                    .ajax-progress-bar {
+                                                                        width: 16em;
+                                                                    }
+                                                                    /* Full screen throbber */
+                                                                    
+                                                                    .ajax-progress-fullscreen {
+                                                                        position: fixed;
+                                                                        z-index: 1000;
+                                                                        top: 48.5%;
+                                                                        /* Can't do center:50% middle: 50%, so approximate it for a typical window size. */
+                                                                        left: 49%;
+                                                                        /* LTR */
+                                                                        width: 24px;
+                                                                        height: 24px;
+                                                                        padding: 4px;
+                                                                        opacity: 0.9;
+                                                                        border-radius: 7px;
+                                                                        background-color: #232323;
+                                                                        background-image: url(../../../images/core/loading-small.gif);
+                                                                        background-repeat: no-repeat;
+                                                                        background-position: center center;
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] .ajax-progress-fullscreen {
+                                                                        right: 49%;
+                                                                        left: auto;
+                                                                    }
+                                                                    /**
+ * @file
+ * Alignment classes for text and block level elements.
+ */
+                                                                    
+                                                                    .text-align-left {
+                                                                        text-align: left;
+                                                                    }
+                                                                    
+                                                                    .text-align-right {
+                                                                        text-align: right;
+                                                                    }
+                                                                    
+                                                                    .text-align-center {
+                                                                        text-align: center;
+                                                                    }
+                                                                    
+                                                                    .text-align-justify {
+                                                                        text-align: justify;
+                                                                    }
+                                                                    /**
+   * Alignment classes for block level elements (images, videos, blockquotes, etc.)
+   */
+                                                                    
+                                                                    .align-left {
+                                                                        float: left;
+                                                                    }
+                                                                    
+                                                                    .align-right {
+                                                                        float: right;
+                                                                    }
+                                                                    
+                                                                    .align-center {
+                                                                        display: block;
+                                                                        margin-right: auto;
+                                                                        margin-left: auto;
+                                                                    }
+                                                                    /**
+ * @file
+ * Resizable textareas.
+ */
+                                                                    
+                                                                    .resize-none {
+                                                                        resize: none;
+                                                                    }
+                                                                    
+                                                                    .resize-vertical {
+                                                                        min-height: 2em;
+                                                                        resize: vertical;
+                                                                    }
+                                                                    
+                                                                    .resize-horizontal {
+                                                                        max-width: 100%;
+                                                                        resize: horizontal;
+                                                                    }
+                                                                    
+                                                                    .resize-both {
+                                                                        max-width: 100%;
+                                                                        min-height: 2em;
+                                                                        resize: both;
+                                                                    }
+                                                                    /**
+ * @file
+ * Table header behavior.
+ *
+ * @see tableheader.js
+ */
+                                                                    
+                                                                    table.sticky-header {
+                                                                        z-index: 500;
+                                                                        top: 0;
+                                                                        margin-top: 0;
+                                                                        background-color: #fff;
+                                                                    }
+                                                                    /**
+ * @file
+ * Styles for the system status counter component.
+ */
+                                                                    
+                                                                    .system-status-counter__status-icon {
+                                                                        display: inline-block;
+                                                                        width: 25px;
+                                                                        height: 25px;
+                                                                        vertical-align: middle;
+                                                                    }
+                                                                    
+                                                                    .system-status-counter__status-icon:before {
+                                                                        display: block;
+                                                                        content: "";
+                                                                        background-repeat: no-repeat;
+                                                                        background-position: center 2px;
+                                                                        background-size: 20px;
+                                                                    }
+                                                                    
+                                                                    .system-status-counter__status-icon--error:before {
+                                                                        background-image: url(../../../images/core/icons/e32700/error.svg);
+                                                                    }
+                                                                    
+                                                                    .system-status-counter__status-icon--warning:before {
+                                                                        background-image: url(../../../images/core/icons/e29700/warning.svg);
+                                                                    }
+                                                                    
+                                                                    .system-status-counter__status-icon--checked:before {
+                                                                        background-image: url(../../../images/core/icons/73b355/check.svg);
+                                                                    }
+                                                                    /**
+ * @file
+ * Styles for the system status counter component.
+ */
+                                                                    
+                                                                    .system-status-counter__status-icon {
+                                                                        display: inline-block;
+                                                                        width: 25px;
+                                                                        height: 25px;
+                                                                        vertical-align: middle;
+                                                                    }
+                                                                    
+                                                                    .system-status-counter__status-icon:before {
+                                                                        display: block;
+                                                                        content: "";
+                                                                        background-repeat: no-repeat;
+                                                                        background-position: center 2px;
+                                                                        background-size: 20px;
+                                                                    }
+                                                                    
+                                                                    .system-status-counter__status-icon--error:before {
+                                                                        background-image: url(../../../images/core/icons/e32700/error.svg);
+                                                                    }
+                                                                    
+                                                                    .system-status-counter__status-icon--warning:before {
+                                                                        background-image: url(../../../images/core/icons/e29700/warning.svg);
+                                                                    }
+                                                                    
+                                                                    .system-status-counter__status-icon--checked:before {
+                                                                        background-image: url(../../../images/core/icons/73b355/check.svg);
+                                                                    }
+                                                                    /**
+ * @file
+ * Styles for the system status report counters.
+ */
+                                                                    
+                                                                    .system-status-report-counters__item {
+                                                                        width: 100%;
+                                                                        margin-bottom: 0.5em;
+                                                                        padding: 0.5em 0;
+                                                                        text-align: center;
+                                                                        white-space: nowrap;
+                                                                        background-color: rgba(0, 0, 0, 0.063);
+                                                                    }
+                                                                    
+                                                                    @media screen and (min-width: 60em) {
+                                                                        .system-status-report-counters {
+                                                                            display: flex;
+                                                                            flex-wrap: wrap;
+                                                                            justify-content: space-between;
+                                                                        }
+                                                                        .system-status-report-counters__item--half-width {
+                                                                            width: 49%;
+                                                                        }
+                                                                        .system-status-report-counters__item--third-width {
+                                                                            width: 33%;
+                                                                        }
+                                                                    }
+                                                                    /**
+ * @file
+ * Default styles for the System Status general info.
+ */
+                                                                    
+                                                                    .system-status-general-info__item {
+                                                                        margin-top: 1em;
+                                                                        padding: 0 1em 1em;
+                                                                        border: 1px solid #ccc;
+                                                                    }
+                                                                    
+                                                                    .system-status-general-info__item-title {
+                                                                        border-bottom: 1px solid #ccc;
+                                                                    }
+                                                                    /**
+ * @file
+ * Table drag behavior.
+ *
+ * @see tabledrag.js
+ */
+                                                                    
+                                                                    body.drag {
+                                                                        cursor: move;
+                                                                    }
+                                                                    
+                                                                    tr.region-title {
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    tr.region-message {
+                                                                        color: #999;
+                                                                    }
+                                                                    
+                                                                    tr.region-populated {
+                                                                        display: none;
+                                                                    }
+                                                                    
+                                                                    tr.add-new .tabledrag-changed {
+                                                                        display: none;
+                                                                    }
+                                                                    
+                                                                    .draggable a.tabledrag-handle {
+                                                                        float: left;
+                                                                        /* LTR */
+                                                                        overflow: hidden;
+                                                                        height: 1.7em;
+                                                                        margin-left: -1em;
+                                                                        /* LTR */
+                                                                        cursor: move;
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] .draggable a.tabledrag-handle {
+                                                                        float: right;
+                                                                        margin-right: -1em;
+                                                                        margin-left: 0;
+                                                                    }
+                                                                    
+                                                                    a.tabledrag-handle:hover {
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    
+                                                                    a.tabledrag-handle .handle {
+                                                                        width: 14px;
+                                                                        height: 14px;
+                                                                        margin: -0.4em 0.5em 0;
+                                                                        padding: 0.42em 0.5em;
+                                                                        background: url(../../../images/core/icons/787878/move.svg) no-repeat 6px 7px;
+                                                                    }
+                                                                    
+                                                                    a.tabledrag-handle:hover .handle,
+                                                                    a.tabledrag-handle:focus .handle {
+                                                                        background-image: url(../../../images/core/icons/000000/move.svg);
+                                                                    }
+                                                                    
+                                                                    .touchevents .draggable td {
+                                                                        padding: 0 10px;
+                                                                    }
+                                                                    
+                                                                    .touchevents .draggable .menu-item__link {
+                                                                        display: inline-block;
+                                                                        padding: 10px 0;
+                                                                    }
+                                                                    
+                                                                    .touchevents a.tabledrag-handle {
+                                                                        width: 40px;
+                                                                        height: 44px;
+                                                                    }
+                                                                    
+                                                                    .touchevents a.tabledrag-handle .handle {
+                                                                        height: 21px;
+                                                                        background-position: 40% 19px;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] .touch a.tabledrag-handle .handle {
+                                                                        background-position: right 40% top 19px;
+                                                                    }
+                                                                    
+                                                                    .touchevents .draggable.drag a.tabledrag-handle .handle {
+                                                                        background-position: 50% -32px;
+                                                                    }
+                                                                    
+                                                                    .tabledrag-toggle-weight-wrapper {
+                                                                        text-align: right;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] .tabledrag-toggle-weight-wrapper {
+                                                                        text-align: left;
+                                                                    }
+                                                                    
+                                                                    .indentation {
+                                                                        float: left;
+                                                                        /* LTR */
+                                                                        width: 20px;
+                                                                        height: 1.7em;
+                                                                        margin: -0.4em 0.2em -0.4em -0.4em;
+                                                                        /* LTR */
+                                                                        padding: 0.42em 0 0.42em 0.6em;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] .indentation {
+                                                                        float: right;
+                                                                        margin: -0.4em -0.4em -0.4em 0.2em;
+                                                                        padding: 0.42em 0.6em 0.42em 0;
+                                                                    }
+                                                                    /**
+ * @file
+ * Table sort indicator.
+ *
+ * @see tablesort-indicator.html.twig
+ */
+                                                                    
+                                                                    .tablesort {
+                                                                        display: inline-block;
+                                                                        width: 16px;
+                                                                        height: 16px;
+                                                                        background-size: 100%;
+                                                                    }
+                                                                    
+                                                                    .tablesort--asc {
+                                                                        background-image: url(../../../images/core/icons/787878/twistie-down.svg);
+                                                                    }
+                                                                    
+                                                                    .tablesort--desc {
+                                                                        background-image: url(../../../images/core/icons/787878/twistie-up.svg);
+                                                                    }
+                                                                    /**
+ * @file
+ * Table sort indicator.
+ *
+ * @see tablesort-indicator.html.twig
+ */
+                                                                    
+                                                                    .tablesort {
+                                                                        display: inline-block;
+                                                                        width: 16px;
+                                                                        height: 16px;
+                                                                        background-size: 100%;
+                                                                    }
+                                                                    
+                                                                    .tablesort--asc {
+                                                                        background-image: url(../../../images/core/icons/787878/twistie-down.svg);
+                                                                    }
+                                                                    
+                                                                    .tablesort--desc {
+                                                                        background-image: url(../../../images/core/icons/787878/twistie-up.svg);
+                                                                    }
+                                                                    /**
+ * @file
+ * Visual styles for a nested tree child.
+ */
+                                                                    
+                                                                    div.tree-child {
+                                                                        background: url(../../../images/core/tree.png) no-repeat 11px center;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    div.tree-child-last {
+                                                                        background: url(../../../images/core/tree-bottom.png) no-repeat 11px center;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] div.tree-child,
+                                                                    [dir="rtl"] div.tree-child-last {
+                                                                        background-position: -65px center;
+                                                                    }
+                                                                    
+                                                                    div.tree-child-horizontal {
+                                                                        background: url(../../../images/core/tree.png) no-repeat -11px center;
+                                                                    }
+                                                                    /*!
+ * jQuery UI CSS Framework 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/theming/
+ */
+                                                                    /* Layout helpers
+----------------------------------*/
+                                                                    
+                                                                    .ui-helper-hidden {
+                                                                        display: none;
+                                                                    }
+                                                                    
+                                                                    .ui-helper-hidden-accessible {
+                                                                        border: 0;
+                                                                        clip: rect(0 0 0 0);
+                                                                        height: 1px;
+                                                                        margin: -1px;
+                                                                        overflow: hidden;
+                                                                        padding: 0;
+                                                                        position: absolute;
+                                                                        width: 1px;
+                                                                    }
+                                                                    
+                                                                    .ui-helper-reset {
+                                                                        margin: 0;
+                                                                        padding: 0;
+                                                                        border: 0;
+                                                                        outline: 0;
+                                                                        line-height: 1.3;
+                                                                        text-decoration: none;
+                                                                        font-size: 100%;
+                                                                        list-style: none;
+                                                                    }
+                                                                    
+                                                                    .ui-helper-clearfix:before,
+                                                                    .ui-helper-clearfix:after {
+                                                                        content: "";
+                                                                        display: table;
+                                                                        border-collapse: collapse;
+                                                                    }
+                                                                    
+                                                                    .ui-helper-clearfix:after {
+                                                                        clear: both;
+                                                                    }
+                                                                    
+                                                                    .ui-helper-zfix {
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                        top: 0;
+                                                                        left: 0;
+                                                                        position: absolute;
+                                                                        opacity: 0;
+                                                                        filter: Alpha(Opacity=0);
+                                                                        /* support: IE8 */
+                                                                    }
+                                                                    
+                                                                    .ui-front {
+                                                                        z-index: 100;
+                                                                    }
+                                                                    /* Interaction Cues
+----------------------------------*/
+                                                                    
+                                                                    .ui-state-disabled {
+                                                                        cursor: default !important;
+                                                                        pointer-events: none;
+                                                                    }
+                                                                    /* Icons
+----------------------------------*/
+                                                                    
+                                                                    .ui-icon {
+                                                                        display: inline-block;
+                                                                        vertical-align: middle;
+                                                                        margin-top: -.25em;
+                                                                        position: relative;
+                                                                        text-indent: -99999px;
+                                                                        overflow: hidden;
+                                                                        background-repeat: no-repeat;
+                                                                    }
+                                                                    
+                                                                    .ui-widget-icon-block {
+                                                                        left: 50%;
+                                                                        margin-left: -8px;
+                                                                        display: block;
+                                                                    }
+                                                                    /* Misc visuals
+----------------------------------*/
+                                                                    /* Overlays */
+                                                                    
+                                                                    .ui-widget-overlay {
+                                                                        position: fixed;
+                                                                        top: 0;
+                                                                        left: 0;
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                    }
+                                                                    /*!
+ * jQuery UI Checkboxradio 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/checkboxradio/#theming
+ */
+                                                                    
+                                                                    .ui-checkboxradio-label .ui-icon-background {
+                                                                        box-shadow: inset 1px 1px 1px #ccc;
+                                                                        border-radius: .12em;
+                                                                        border: none;
+                                                                    }
+                                                                    
+                                                                    .ui-checkboxradio-radio-label .ui-icon-background {
+                                                                        width: 16px;
+                                                                        height: 16px;
+                                                                        border-radius: 1em;
+                                                                        overflow: visible;
+                                                                        border: none;
+                                                                    }
+                                                                    
+                                                                    .ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon,
+                                                                    .ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon {
+                                                                        background-image: none;
+                                                                        width: 8px;
+                                                                        height: 8px;
+                                                                        border-width: 4px;
+                                                                        border-style: solid;
+                                                                    }
+                                                                    
+                                                                    .ui-checkboxradio-disabled {
+                                                                        pointer-events: none;
+                                                                    }
+                                                                    /*!
+ * jQuery UI Controlgroup 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/controlgroup/#theming
+ */
+                                                                    
+                                                                    .ui-controlgroup {
+                                                                        vertical-align: middle;
+                                                                        display: inline-block;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup>.ui-controlgroup-item {
+                                                                        float: left;
+                                                                        margin-left: 0;
+                                                                        margin-right: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup>.ui-controlgroup-item:focus,
+                                                                    .ui-controlgroup>.ui-controlgroup-item.ui-visual-focus {
+                                                                        z-index: 9999;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup-vertical>.ui-controlgroup-item {
+                                                                        display: block;
+                                                                        float: none;
+                                                                        width: 100%;
+                                                                        margin-top: 0;
+                                                                        margin-bottom: 0;
+                                                                        text-align: left;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup-vertical .ui-controlgroup-item {
+                                                                        box-sizing: border-box;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup .ui-controlgroup-label {
+                                                                        padding: .4em 1em;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup .ui-controlgroup-label span {
+                                                                        font-size: 80%;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup-horizontal .ui-controlgroup-label+.ui-controlgroup-item {
+                                                                        border-left: none;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup-vertical .ui-controlgroup-label+.ui-controlgroup-item {
+                                                                        border-top: none;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup-horizontal .ui-controlgroup-label.ui-widget-content {
+                                                                        border-right: none;
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup-vertical .ui-controlgroup-label.ui-widget-content {
+                                                                        border-bottom: none;
+                                                                    }
+                                                                    /* Spinner specific style fixes */
+                                                                    
+                                                                    .ui-controlgroup-vertical .ui-spinner-input {
+                                                                        /* Support: IE8 only, Android < 4.4 only */
+                                                                        width: 75%;
+                                                                        width: calc( 100% - 2.4em);
+                                                                    }
+                                                                    
+                                                                    .ui-controlgroup-vertical .ui-spinner .ui-spinner-up {
+                                                                        border-top-style: solid;
+                                                                    }
+                                                                    /*!
+ * jQuery UI Button 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/button/#theming
+ */
+                                                                    
+                                                                    .ui-button {
+                                                                        padding: .4em 1em;
+                                                                        display: inline-block;
+                                                                        position: relative;
+                                                                        line-height: normal;
+                                                                        margin-right: .1em;
+                                                                        cursor: pointer;
+                                                                        vertical-align: middle;
+                                                                        text-align: center;
+                                                                        -webkit-user-select: none;
+                                                                        -moz-user-select: none;
+                                                                        -ms-user-select: none;
+                                                                        user-select: none;
+                                                                        /* Support: IE <= 11 */
+                                                                        overflow: visible;
+                                                                    }
+                                                                    
+                                                                    .ui-button,
+                                                                    .ui-button:link,
+                                                                    .ui-button:visited,
+                                                                    .ui-button:hover,
+                                                                    .ui-button:active {
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    /* to make room for the icon, a width needs to be set here */
+                                                                    
+                                                                    .ui-button-icon-only {
+                                                                        width: 2em;
+                                                                        box-sizing: border-box;
+                                                                        text-indent: -9999px;
+                                                                        white-space: nowrap;
+                                                                    }
+                                                                    /* no icon support for input elements */
+                                                                    
+                                                                    input.ui-button.ui-button-icon-only {
+                                                                        text-indent: 0;
+                                                                    }
+                                                                    /* button icon element(s) */
+                                                                    
+                                                                    .ui-button-icon-only .ui-icon {
+                                                                        position: absolute;
+                                                                        top: 50%;
+                                                                        left: 50%;
+                                                                        margin-top: -8px;
+                                                                        margin-left: -8px;
+                                                                    }
+                                                                    
+                                                                    .ui-button.ui-icon-notext .ui-icon {
+                                                                        padding: 0;
+                                                                        width: 2.1em;
+                                                                        height: 2.1em;
+                                                                        text-indent: -9999px;
+                                                                        white-space: nowrap;
+                                                                    }
+                                                                    
+                                                                    input.ui-button.ui-icon-notext .ui-icon {
+                                                                        width: auto;
+                                                                        height: auto;
+                                                                        text-indent: 0;
+                                                                        white-space: normal;
+                                                                        padding: .4em 1em;
+                                                                    }
+                                                                    /* workarounds */
+                                                                    /* Support: Firefox 5 - 40 */
+                                                                    
+                                                                    input.ui-button::-moz-focus-inner,
+                                                                    button.ui-button::-moz-focus-inner {
+                                                                        border: 0;
+                                                                        padding: 0;
+                                                                    }
+                                                                    /*!
+ * jQuery UI Resizable 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+                                                                    
+                                                                    .ui-resizable {
+                                                                        position: relative;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-handle {
+                                                                        position: absolute;
+                                                                        font-size: 0.1px;
+                                                                        display: block;
+                                                                        -ms-touch-action: none;
+                                                                        touch-action: none;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-disabled .ui-resizable-handle,
+                                                                    .ui-resizable-autohide .ui-resizable-handle {
+                                                                        display: none;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-n {
+                                                                        cursor: n-resize;
+                                                                        height: 7px;
+                                                                        width: 100%;
+                                                                        top: -5px;
+                                                                        left: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-s {
+                                                                        cursor: s-resize;
+                                                                        height: 7px;
+                                                                        width: 100%;
+                                                                        bottom: -5px;
+                                                                        left: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-e {
+                                                                        cursor: e-resize;
+                                                                        width: 7px;
+                                                                        right: -5px;
+                                                                        top: 0;
+                                                                        height: 100%;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-w {
+                                                                        cursor: w-resize;
+                                                                        width: 7px;
+                                                                        left: -5px;
+                                                                        top: 0;
+                                                                        height: 100%;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-se {
+                                                                        cursor: se-resize;
+                                                                        width: 12px;
+                                                                        height: 12px;
+                                                                        right: 1px;
+                                                                        bottom: 1px;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-sw {
+                                                                        cursor: sw-resize;
+                                                                        width: 9px;
+                                                                        height: 9px;
+                                                                        left: -5px;
+                                                                        bottom: -5px;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-nw {
+                                                                        cursor: nw-resize;
+                                                                        width: 9px;
+                                                                        height: 9px;
+                                                                        left: -5px;
+                                                                        top: -5px;
+                                                                    }
+                                                                    
+                                                                    .ui-resizable-ne {
+                                                                        cursor: ne-resize;
+                                                                        width: 9px;
+                                                                        height: 9px;
+                                                                        right: -5px;
+                                                                        top: -5px;
+                                                                    }
+                                                                    /*!
+ * jQuery UI Dialog 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/dialog/#theming
+ */
+                                                                    
+                                                                    .ui-dialog {
+                                                                        position: absolute;
+                                                                        top: 0;
+                                                                        left: 0;
+                                                                        padding: .2em;
+                                                                        outline: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-dialog-titlebar {
+                                                                        padding: .4em 1em;
+                                                                        position: relative;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-dialog-title {
+                                                                        float: left;
+                                                                        margin: .1em 0;
+                                                                        white-space: nowrap;
+                                                                        width: 90%;
+                                                                        overflow: hidden;
+                                                                        text-overflow: ellipsis;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-dialog-titlebar-close {
+                                                                        position: absolute;
+                                                                        right: .3em;
+                                                                        top: 50%;
+                                                                        width: 20px;
+                                                                        margin: -10px 0 0 0;
+                                                                        padding: 1px;
+                                                                        height: 20px;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-dialog-content {
+                                                                        position: relative;
+                                                                        border: 0;
+                                                                        padding: .5em 1em;
+                                                                        background: none;
+                                                                        overflow: auto;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-dialog-buttonpane {
+                                                                        text-align: left;
+                                                                        border-width: 1px 0 0 0;
+                                                                        background-image: none;
+                                                                        margin-top: .5em;
+                                                                        padding: .3em 1em .5em .4em;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+                                                                        float: right;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-dialog-buttonpane button {
+                                                                        margin: .5em .4em .5em 0;
+                                                                        cursor: pointer;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-n {
+                                                                        height: 2px;
+                                                                        top: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-e {
+                                                                        width: 2px;
+                                                                        right: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-s {
+                                                                        height: 2px;
+                                                                        bottom: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-w {
+                                                                        width: 2px;
+                                                                        left: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-se,
+                                                                    .ui-dialog .ui-resizable-sw,
+                                                                    .ui-dialog .ui-resizable-ne,
+                                                                    .ui-dialog .ui-resizable-nw {
+                                                                        width: 7px;
+                                                                        height: 7px;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-se {
+                                                                        right: 0;
+                                                                        bottom: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-sw {
+                                                                        left: 0;
+                                                                        bottom: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-ne {
+                                                                        right: 0;
+                                                                        top: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-dialog .ui-resizable-nw {
+                                                                        left: 0;
+                                                                        top: 0;
+                                                                    }
+                                                                    
+                                                                    .ui-draggable .ui-dialog-titlebar {
+                                                                        cursor: move;
+                                                                    }
+                                                                    /*!
+ * jQuery UI Tabs 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/tabs/#theming
+ */
+                                                                    
+                                                                    .ui-tabs {
+                                                                        position: relative;
+                                                                        /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+                                                                        padding: .2em;
+                                                                    }
+                                                                    
+                                                                    .ui-tabs .ui-tabs-nav {
+                                                                        margin: 0;
+                                                                        padding: .2em .2em 0;
+                                                                    }
+                                                                    
+                                                                    .ui-tabs .ui-tabs-nav li {
+                                                                        list-style: none;
+                                                                        float: left;
+                                                                        position: relative;
+                                                                        top: 0;
+                                                                        margin: 1px .2em 0 0;
+                                                                        border-bottom-width: 0;
+                                                                        padding: 0;
+                                                                        white-space: nowrap;
+                                                                    }
+                                                                    
+                                                                    .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+                                                                        float: left;
+                                                                        padding: .5em 1em;
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    
+                                                                    .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+                                                                        margin-bottom: -1px;
+                                                                        padding-bottom: 1px;
+                                                                    }
+                                                                    
+                                                                    .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+                                                                    .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+                                                                    .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+                                                                        cursor: text;
+                                                                    }
+                                                                    
+                                                                    .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+                                                                        cursor: pointer;
+                                                                    }
+                                                                    
+                                                                    .ui-tabs .ui-tabs-panel {
+                                                                        display: block;
+                                                                        border-width: 0;
+                                                                        padding: 1em 1.4em;
+                                                                        background: none;
+                                                                    }
+                                                                    /* table style column align */
+                                                                    
+                                                                    .views-align-left {
+                                                                        text-align: left;
+                                                                    }
+                                                                    
+                                                                    .views-align-right {
+                                                                        text-align: right;
+                                                                    }
+                                                                    
+                                                                    .views-align-center {
+                                                                        text-align: center;
+                                                                    }
+                                                                    /* Grid style column align. */
+                                                                    
+                                                                    .views-view-grid .views-col {
+                                                                        float: left;
+                                                                    }
+                                                                    
+                                                                    .views-view-grid .views-row {
+                                                                        float: left;
+                                                                        clear: both;
+                                                                        width: 100%;
+                                                                    }
+                                                                    /* Provide some space between display links. */
+                                                                    
+                                                                    .views-display-link+.views-display-link {
+                                                                        margin-left: 0.5em;
+                                                                    }
+                                                                    /* cyrillic-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZVcf6lvg.woff2) format('woff2');
+                                                                        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                                                                    }
+                                                                    /* cyrillic */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZXMf6lvg.woff2) format('woff2');
+                                                                        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZV8f6lvg.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZVsf6lvg.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZWMf6.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /* cyrillic-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-cSZMZ-Y.woff2) format('woff2');
+                                                                        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                                                                    }
+                                                                    /* cyrillic */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-eCZMZ-Y.woff2) format('woff2');
+                                                                        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-cyZMZ-Y.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-ciZMZ-Y.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /* cyrillic-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZVcf6lvg.woff2) format('woff2');
+                                                                        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                                                                    }
+                                                                    /* cyrillic */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZXMf6lvg.woff2) format('woff2');
+                                                                        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZV8f6lvg.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZVsf6lvg.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Merriweather';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /* cyrillic-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                                                                    }
+                                                                    /* cyrillic */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                                                                    }
+                                                                    /* greek-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+1F00-1FFF;
+                                                                    }
+                                                                    /* greek */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0370-03FF;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 300;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /* cyrillic-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+                                                                        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                                                                    }
+                                                                    /* cyrillic */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+                                                                        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                                                                    }
+                                                                    /* greek-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+                                                                        unicode-range: U+1F00-1FFF;
+                                                                    }
+                                                                    /* greek */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+                                                                        unicode-range: U+0370-03FF;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /* cyrillic-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 600;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                                                                    }
+                                                                    /* cyrillic */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 600;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                                                                    }
+                                                                    /* greek-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 600;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+1F00-1FFF;
+                                                                    }
+                                                                    /* greek */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 600;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0370-03FF;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 600;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 600;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 600;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /* cyrillic-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                                                                    }
+                                                                    /* cyrillic */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                                                                    }
+                                                                    /* greek-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+1F00-1FFF;
+                                                                    }
+                                                                    /* greek */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0370-03FF;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Source Sans Pro';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Signika';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/signika/v12/vEFR2_JTCgwQ5ejvG14mBkho.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Signika';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/signika/v12/vEFR2_JTCgwQ5ejvG18mBkho.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Signika';
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        src: url(https://fonts.gstatic.com/s/signika/v12/vEFR2_JTCgwQ5ejvG1EmBg.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /* vietnamese */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Signika';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/signika/v12/vEFR2_JTCgwQ5ejvG14mBkho.woff2) format('woff2');
+                                                                        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                                                                    }
+                                                                    /* latin-ext */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Signika';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/signika/v12/vEFR2_JTCgwQ5ejvG18mBkho.woff2) format('woff2');
+                                                                        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                                                                    }
+                                                                    /* latin */
+                                                                    
+                                                                    @font-face {
+                                                                        font-family: 'Signika';
+                                                                        font-style: normal;
+                                                                        font-weight: 700;
+                                                                        src: url(https://fonts.gstatic.com/s/signika/v12/vEFR2_JTCgwQ5ejvG1EmBg.woff2) format('woff2');
+                                                                        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                                                                    }
+                                                                    /**
+ * @file
+ * Visual styles for animated throbber.
+ *
+ * @see autocomplete.js
+ */
+                                                                    
+                                                                    .js input.form-autocomplete {
+                                                                        background-image: url(../../../images/core/throbber-inactive.png);
+                                                                        background-repeat: no-repeat;
+                                                                        background-position: 100% center;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    .js[dir="rtl"] input.form-autocomplete {
+                                                                        background-position: 0% center;
+                                                                    }
+                                                                    
+                                                                    .js input.form-autocomplete.ui-autocomplete-loading {
+                                                                        background-image: url(../../../images/core/throbber-active.gif);
+                                                                        background-position: 100% center;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    .js[dir="rtl"] input.form-autocomplete.ui-autocomplete-loading {
+                                                                        background-position: 0% center;
+                                                                    }
+                                                                    /**
+ * @file
+ * Fieldgroup border reset.
+ */
+                                                                    
+                                                                    .fieldgroup {
+                                                                        padding: 0;
+                                                                        border-width: 0;
+                                                                    }
+                                                                    /**
+ * @file
+ * Inline items.
+ */
+                                                                    
+                                                                    .container-inline div,
+                                                                    .container-inline label {
+                                                                        display: inline;
+                                                                    }
+                                                                    /* Details contents always need to be rendered as block. */
+                                                                    
+                                                                    .container-inline .details-wrapper {
+                                                                        display: block;
+                                                                    }
+                                                                    /**
+ * @file
+ * Float clearing.
+ *
+ * Based on the micro clearfix hack by Nicolas Gallagher, with the :before
+ * pseudo selector removed to allow normal top margin collapse.
+ *
+ * @see http://nicolasgallagher.com/micro-clearfix-hack
+ */
+                                                                    
+                                                                    .clearfix:after {
+                                                                        display: table;
+                                                                        clear: both;
+                                                                        content: "";
+                                                                    }
+                                                                    /**
+ * @file
+ * Collapsible details.
+ *
+ * @see collapse.js
+ */
+                                                                    
+                                                                    .js details:not([open]) .details-wrapper {
+                                                                        display: none;
+                                                                    }
+                                                                    /**
+ * @file
+ * Utility classes to hide elements in different ways.
+ */
+                                                                    /**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be collapsible details that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+                                                                    
+                                                                    .hidden {
+                                                                        display: none;
+                                                                    }
+                                                                    /**
+   * Hide elements visually, but keep them available for screen readers.
+   *
+   * Used for information required for screen reader users to understand and use
+   * the site where visual display is undesirable. Information provided in this
+   * manner should be kept concise, to avoid unnecessary burden on the user.
+   * "!important" is used to prevent unintentional overrides.
+   */
+                                                                    
+                                                                    .visually-hidden {
+                                                                        position: absolute !important;
+                                                                        overflow: hidden;
+                                                                        clip: rect(1px, 1px, 1px, 1px);
+                                                                        width: 1px;
+                                                                        height: 1px;
+                                                                        word-wrap: normal;
+                                                                    }
+                                                                    /**
+   * The .focusable class extends the .visually-hidden class to allow
+   * the element to be focusable when navigated to via the keyboard.
+   */
+                                                                    
+                                                                    .visually-hidden.focusable:active,
+                                                                    .visually-hidden.focusable:focus {
+                                                                        position: static !important;
+                                                                        overflow: visible;
+                                                                        clip: auto;
+                                                                        width: auto;
+                                                                        height: auto;
+                                                                    }
+                                                                    /**
+   * Hide visually and from screen readers, but maintain layout.
+   */
+                                                                    
+                                                                    .invisible {
+                                                                        visibility: hidden;
+                                                                    }
+                                                                    /**
+ * @file
+ * Styles for item list.
+ */
+                                                                    
+                                                                    .item-list__comma-list,
+                                                                    .item-list__comma-list li {
+                                                                        display: inline;
+                                                                    }
+                                                                    
+                                                                    .item-list__comma-list {
+                                                                        margin: 0;
+                                                                        padding: 0;
+                                                                    }
+                                                                    
+                                                                    .item-list__comma-list li:after {
+                                                                        content: ", ";
+                                                                    }
+                                                                    
+                                                                    .item-list__comma-list li:last-child:after {
+                                                                        content: "";
+                                                                    }
+                                                                    /**
+ * @file
+ * Utility classes to assist with Javascript functionality.
+ */
+                                                                    /**
+ * For anything you want to hide on page load when JS is enabled, so
+ * that you can use the JS to control visibility and avoid flicker.
+ */
+                                                                    
+                                                                    .js .js-hide {
+                                                                        display: none;
+                                                                    }
+                                                                    /**
+   * For anything you want to show on page load only when JS is enabled.
+   */
+                                                                    
+                                                                    .js-show {
+                                                                        display: none;
+                                                                    }
+                                                                    
+                                                                    .js .js-show {
+                                                                        display: block;
+                                                                    }
+                                                                    /*
+ * @file
+ * Contain positioned elements.
+ */
+                                                                    
+                                                                    .position-container {
+                                                                        position: relative;
+                                                                    }
+                                                                    /**
+ * @file
+ * Progress behavior.
+ *
+ * @see progress.js
+ */
+                                                                    
+                                                                    .progress {
+                                                                        position: relative;
+                                                                    }
+                                                                    
+                                                                    .progress__track {
+                                                                        min-width: 100px;
+                                                                        max-width: 100%;
+                                                                        height: 16px;
+                                                                        margin-top: 5px;
+                                                                        border: 1px solid;
+                                                                        background-color: #fff;
+                                                                    }
+                                                                    
+                                                                    .progress__bar {
+                                                                        width: 3%;
+                                                                        min-width: 3%;
+                                                                        max-width: 100%;
+                                                                        height: 1.5em;
+                                                                        background-color: #000;
+                                                                    }
+                                                                    
+                                                                    .progress__description,
+                                                                    .progress__percentage {
+                                                                        overflow: hidden;
+                                                                        margin-top: 0.2em;
+                                                                        color: #555;
+                                                                        font-size: 0.875em;
+                                                                    }
+                                                                    
+                                                                    .progress__description {
+                                                                        float: left;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] .progress__description {
+                                                                        float: right;
+                                                                    }
+                                                                    
+                                                                    .progress__percentage {
+                                                                        float: right;
+                                                                        /* LTR */
+                                                                    }
+                                                                    
+                                                                    [dir="rtl"] .progress__percentage {
+                                                                        float: left;
+                                                                    }
+                                                                    
+                                                                    .progress--small .progress__track {
+                                                                        height: 7px;
+                                                                    }
+                                                                    
+                                                                    .progress--small .progress__bar {
+                                                                        height: 7px;
+                                                                        background-size: 20px 20px;
+                                                                    }
+                                                                    
+                                                                    .reset-appearance {
+                                                                        margin: 0;
+                                                                        padding: 0;
+                                                                        border: 0 none;
+                                                                        background: transparent;
+                                                                        line-height: inherit;
+                                                                        -webkit-appearance: none;
+                                                                        -moz-appearance: none;
+                                                                        appearance: none;
+                                                                    }
+                                                                    /* Slideshow container */
+                                                                    
+                                                                    .slideshow {
+                                                                        position: relative;
+                                                                        background: white;
+                                                                        width: 100%;
+                                                                    }
+                                                                    /* Slides */
+                                                                    
+                                                                    .Slides {
+                                                                        display: none;
+                                                                        padding: 80px;
+                                                                        text-align: center;
+                                                                    }
+                                                                    /* Next & previous buttons */
+                                                                    
+                                                                    .prev,
+                                                                    .next {
+                                                                        cursor: pointer;
+                                                                        position: absolute;
+                                                                        top: 50%;
+                                                                        width: auto;
+                                                                        margin-top: -30px;
+                                                                        padding: 16px;
+                                                                        color: #888;
+                                                                        font-weight: bold;
+                                                                        font-size: 20px;
+                                                                        border-radius: 0 3px 3px 0;
+                                                                        user-select: none;
+                                                                    }
+                                                                    /* Position the "next button" to the right */
+                                                                    
+                                                                    .next {
+                                                                        position: absolute;
+                                                                        right: 0;
+                                                                        border-radius: 3px 0 0 3px;
+                                                                    }
+                                                                    /* On hover, add a black background color with a little bit see-through */
+                                                                    
+                                                                    .prev:hover,
+                                                                    .next:hover {
+                                                                        background-color: rgba(0, 0, 0, 0.8);
+                                                                        color: white;
+                                                                    }
+                                                                    
+                                                                    .active {
+                                                                        background-color: white;
+                                                                    }
+                                                                    
+                                                                    q {
+                                                                        font-style: inherit;
+                                                                        font-family: sans-serif;
+                                                                        font-size: small;
+                                                                    }
+                                                                    
+                                                                    .author {
+                                                                        color: rgb(36, 36, 37);
+                                                                        font-size: medium;
+                                                                    }
+                                                                    
+                                                                    .image {
+                                                                        opacity: 1;
+                                                                        display: block;
+                                                                        width: 100%;
+                                                                        height: auto;
+                                                                        transition: .5s ease;
+                                                                        backface-visibility: hidden;
+                                                                    }
+                                                                    
+                                                                    .middle {
+                                                                        transition: .5s ease;
+                                                                        opacity: 0;
+                                                                        position: absolute;
+                                                                        top: 50%;
+                                                                        left: 50%;
+                                                                        transform: translate(-50%, -50%);
+                                                                        -ms-transform: translate(-50%, -50%);
+                                                                        text-align: center;
+                                                                    }
+                                                                    
+                                                                    .container:hover .image {
+                                                                        opacity: 0.3;
+                                                                    }
+                                                                    
+                                                                    .container:hover .middle {
+                                                                        opacity: 1;
+                                                                    }
+                                                                    
+                                                                    .text {
+                                                                        background-color: transparent;
+                                                                        color: black;
+                                                                        text-transform: capitalize;
+                                                                        font-size: 16px;
+                                                                        padding: 16px 32px;
+                                                                    }
